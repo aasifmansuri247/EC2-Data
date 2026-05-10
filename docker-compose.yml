@@ -1,14 +1,19 @@
-version: "3"
-
 services:
 
   frontend:
-    image: techmypassion/react-frontend:v1.1
+    image: frontend:v2
     container_name: frontend
 
   backend:
-    image: techmypassion/node-api:v1.1
+    image: techmypassion/node-api:v1.2
     container_name: backend
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+
+    ports:
+    - "27017:27017"
 
   nginx:
     image: nginx:latest

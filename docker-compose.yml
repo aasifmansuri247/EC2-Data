@@ -1,7 +1,7 @@
 services:
 
   frontend:
-    image: frontend:v2
+    image: techmypassion/react-frontend:v1.1
     container_name: frontend
 
   backend:

@@ -8,12 +8,12 @@ services:
     image: techmypassion/node-api:v1.2
     container_name: backend
 
-  #mongodb:
-    #image: mongo:latest
-    #container_name: mongodb
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
 
-    #ports:
-    #- "27017:27017"
+    ports:
+      - "27017:27017"
 
   nginx:
     image: nginx:latest

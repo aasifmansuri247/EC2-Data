@@ -5,7 +5,7 @@ services:
     container_name: frontend
 
   backend:
-    image: techmypassion/node-api:v1.2
+    image: techmypassion/node-api:v1.3
     container_name: backend
 
   # mongodb:
